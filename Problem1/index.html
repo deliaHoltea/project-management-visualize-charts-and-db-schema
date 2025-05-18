@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Team & Sprint Performance Dashboard</title>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>Team Activity Overview</h1>
+
+  <h2>Task Status Distribution per Developer</h2>
+  <div id="charts-pie" class="pie-row"></div>
+
+  <h2>Task Type Distribution per Developer</h2>
+  <div id="charts-types" class="pie-row"></div>
+
+
+  <h2>Estimation Accuracy (Actual ≤ Estimated)</h2>
+  <div id="chart-estimation-accuracy" class="chart-container"></div>
+
+  <h2>Underestimated Tasks (Actual > Estimated)</h2>
+  <div id="chart-underestimation" class="chart-container"></div>
+
+  <h2>Mean Estimation Error per Developer</h2>
+  <div id="chart-mean-estimation-error" class="chart-container"></div>
+
+  <h2>Estimation Error by Task Type</h2>
+  <div id="bar-error-task-type" class="chart-container"></div>
+
+  <h2>Estimation Risk for In Progress Tasks</h2>
+  <div id="chart-inprogress-risk" class="chart-container"></div>
+
+  <h2>Average Closure Time (Done Tasks)</h2>
+  <div id="chart-close-time" class="chart-container"></div>
+
+  <h2>Time Estimates - Done Tasks</h2>
+  <div id="charts-error" class="chart-container"></div>
+
+  <h2>Time Estimates - In Progress Tasks</h2>
+  <div id="charts-inprogress" class="chart-container"></div>
+
+  <h1>Sprint Analysis</h1>
+
+  <h2>Member Contribution per Sprint</h2>
+  <div id="sprint-pie-row" class="pie-row"></div>
+
+  <h2>Developer Workload Share per Sprint</h2>
+  <div id="chart-sprint-workload" class="chart-container"></div>
+
+  <h2>Average Estimation Error per Sprint</h2>
+  <div id="sprint-error-bar" class="chart-container"></div>
+
+  <h2>Unfinished Tasks per Sprint</h2>
+  <div id="sprint-unfinished-bar" class="chart-container"></div>
+
+  <h2>Completion Rate per Sprint</h2>
+  <div id="sprint-completion-bar" class="chart-container"></div>
+
+  <h2>Late Closures per Sprint</h2>
+  <div id="sprint-late-bar" class="chart-container"></div>
+
+  <h2>Task Throughput Over Time</h2>
+  <div id="chart-throughput" class="chart-container"></div>
+
+
+  <script defer src="app.js"></script>
+</body>
+</html>

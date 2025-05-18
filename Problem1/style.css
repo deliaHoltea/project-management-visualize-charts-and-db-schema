@@ -1,0 +1,76 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  color: #1f1f1f;
+  margin: 0;
+  padding: 40px;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #0d47a1;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+
+h2 {
+  font-size: 22px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.chart-title {
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #444;
+}
+
+.chart-container {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  margin-bottom: 50px;
+}
+
+.pie-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.pie-chart {
+  width: 400px;
+  height: 400px;
+  min-width: 300px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  .pie-chart {
+    width: 100%;
+    height: auto;
+    min-width: 100%;
+  }
+
+  .chart-container {
+    padding: 15px;
+  }
+}
